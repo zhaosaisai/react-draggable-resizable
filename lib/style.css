@@ -1,0 +1,66 @@
+.vdr {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .vdr.active{
+      border: dashed 1px #fff;
+  }
+  .draggable:hover {
+    cursor: move;
+  }
+  .handle {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-size: 1px;
+    background: #EEE;
+    border: 1px solid #333;
+    border-radius: 100px;
+  }
+  .handle-tl {
+    top: -5px;
+    left: -5px;
+    cursor: nw-resize;
+  }
+  .handle-tm {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    cursor: n-resize;
+  }
+  .handle-tr {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+  }
+  .handle-ml {
+    top: 50%;
+    margin-top: -5px;
+    left: -5px;
+    cursor: w-resize;
+  }
+  .handle-mr {
+    top: 50%;
+    margin-top: -5px;
+    right: -5px;
+    cursor: e-resize;
+  }
+  .handle-bl {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+  }
+  .handle-bm {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    cursor: s-resize;
+  }
+  .handle-br {
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+  }
+/*# sourceMappingURL=style.css.map*/
