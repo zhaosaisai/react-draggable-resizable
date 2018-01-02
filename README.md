@@ -1,4 +1,6 @@
-![react-draggable-resizable](https://github.com/2json/react-draggable-resizable/tree/master/assets/logo.png)
+<p align="center">
+	<img src="https://github.com/2json/react-draggable-resizable/blob/master/assets/logo.png" />
+</p>
 
 # react-draggable-resizable
 
@@ -314,17 +316,7 @@ ReactDOM.render(<App />, document.getElementById('app'))
 
 ```jsx
 <ReactDraggableResizable
-	resizing={(left, top, width, height) => {
-      console.log(
-      	`
-			left: ${left}
-			top: ${top}
-			width: ${width}
-			height: ${height}
-		`
-      )
-	}}  
->
+	resizestop={(left, top, width, height) => {console.log(`left: ${left}, top: ${top}, width: ${width}, height: ${height}`)}}>
 
 </ReactDraggableResizable>
 ```
@@ -343,17 +335,7 @@ ReactDOM.render(<App />, document.getElementById('app'))
 
 ```jsx
 <ReactDraggableResizable
-	resizestop={(left, top, width, height) => {
-      console.log(
-      	`
-			left: ${left}
-			top: ${top}
-			width: ${width}
-			height: ${height}
-		`
-      )
-	}}  
->
+	resizestop={(left, top, width, height) => {console.log(`left: ${left}, top: ${top}, width: ${width}, height: ${height}`)}}>
 
 </ReactDraggableResizable>
 ```
@@ -369,16 +351,7 @@ ReactDOM.render(<App />, document.getElementById('app'))
 当拖动元素被拖动的时候调用
 
 ```jsx
-<ReactDraggableResizable
-	dragging={(left, top) => {
-      console.log(
-      	`
-			left: ${left}
-			top: ${top}
-		`
-      )
-	}}  
->
+<ReactDraggableResizable dragging={(left, top) => {console.log(`left: ${left}, top: ${top}`)}}>
 
 </ReactDraggableResizable>
 ```
@@ -394,16 +367,7 @@ ReactDOM.render(<App />, document.getElementById('app'))
 当拖动元素拖动停止的时候调用
 
 ```jsx
-<ReactDraggableResizable
-	dragstop={(left, top) => {
-      console.log(
-      	`
-			left: ${left}
-			top: ${top}
-		`
-      )
-	}}  
->
+<ReactDraggableResizable dragstop={(left, top) => {console.log(`left: ${left}, top: ${top}`)}}>
 
 </ReactDraggableResizable>
 ```
