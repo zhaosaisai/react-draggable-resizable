@@ -27,7 +27,7 @@ yarn add https://github.com/2json/react-draggable-resizable.git
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ReactDraggableResizable from 'ReactDraggableResizable'
+import ReactDraggableResizable from 'react-draggable-resizable'
 
 class App extends React.Component {
     constructor(props) {
